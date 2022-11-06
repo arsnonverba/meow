@@ -45,7 +45,6 @@ export default function Layout({ children, meta: pageMeta }: Props) {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
-        <script async defer data-website-id="26e9d02c-9d5c-4854-b717-30d76baa3386" src="https://analytics.metamural.io/umami.js"></script>
       </Head>
       <main>{children}</main>
     </>
