@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -23,7 +22,7 @@ module.exports = {
         'black': '#1D012E',
       },
       backgroundImage: {
-     //   'watermark': "url('/watermark.svg')",
+        'watermark': "url('/watermark.svg')",
       },
       keyframes: {
         wiggle: {
@@ -80,9 +79,12 @@ module.exports = {
       },
     },
 
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/line-clamp'),
+      require('@tailwindcss/aspect-ratio'),
+    ],
     corePlugins: {
       fontFamily: true,
     },
   },
-}
+};
