@@ -23,13 +23,13 @@
 @tailwind variants;
 @layer base {
   h1 {
-    @apply font-din font-bold text-2xl;
+    @apply font-din font-bold tracking-widest leading-[1rem] text-2xl;
   }
   h2 {
-    @apply font-basier italic text-base;
+    @apply font-basier italic tracking-wider leading-[1rem] text-base;
   }
   p {
-    @apply font-basier font-normal text-base;
+    @apply font-basier font-normal tracking-wider leading-[1rem] text-base;
   }
 }
 @layer components {
@@ -104,7 +104,7 @@ a {
 }
 
 @font-face {
-  font-family: 'nunito';
+  font-family: 'basier';
   font-style: italic;
   font-weight: 300;
   src: local(''), url('/fonts/basier/basiercircle-regularitalic-webfont.woff') format('woff2');
