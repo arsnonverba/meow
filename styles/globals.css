@@ -1,18 +1,90 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
 @tailwind base;
+
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
 @tailwind components;
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
 @tailwind utilities;
+
+/**
+ * Use this directive to control where Tailwind injects the hover, focus,
+ * responsive, dark mode, and other variants of each class.
+ *
+ * If omitted, Tailwind will append these classes to the very end of
+ * your stylesheet by default.
+ */
+@tailwind variants;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  p {
+    @apply text-base;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .bg-mm {
+  @apply bg-gradient-to-r from-primary via-secondary to-alt;
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+  .justify-left {
+  text-align: justify;
+  text-align-last: right;
+  --moz-text-align-last: right;
+  }
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
+  touch-action: manipulation;
+  text-rendering: optimizeLegibility;
+  --moz-osx-font-smoothing: grayscale;
+  @apply antialiased;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  .height-screen-helper {
+  height: calc(100vh - 80px);
+  }
+  .custom-box-shadow {
+  --webkit-box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
+  --moz-box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
+  box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
+  }
+  .custom-text-shadow {
+  text-shadow: 0px 0px 29px rgba(80,255,255,1);
+  }
 }
 
 * {
@@ -27,4 +99,40 @@ a {
     color: white;
     background: black;
   }
+}
+
+@font-face {
+  font-family: 'nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''), url('/fonts/nunito/nunito-light-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'nunito';
+  font-style: italic;
+  font-weight: 300;
+  src: local(''), url('/fonts/nunito/nunito-lightitalic-webfont.woff') format('woff2');
+}
+
+@font-face {
+  font-family: 'nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('/fonts/nunito/nunito-semibold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'nunito';
+  font-style: italic;
+  font-weight: 600;
+  src: local(''), url('/fonts/nunito/nunito-semibolditalic-webfont.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'abhayalibre';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('/fonts/abhayalibre/abhayalibre-bold-webfont.woff2') format('woff2');
 }
