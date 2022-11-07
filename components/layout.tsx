@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
+import Navbar from 'components/layout/navbar';
 
 interface PageMeta {
   title: string;
@@ -46,6 +47,7 @@ export default function Layout({ children, meta: pageMeta }: Props) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
+      <Navbar />
       <main>{children}</main>
     </>
   )

@@ -19,5 +19,5 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     <section className="main-skeleton">
     <Component {...pageProps} />
     </section>
-    )
+  )
 }
