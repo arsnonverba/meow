@@ -3,7 +3,9 @@ import Layout from '../components/layout'
 import type { NextPageWithLayout } from './_app'
 
 const Page: NextPageWithLayout = () => {
-  return <p>hello world</p>
+  return (
+    <p>arsnonverba</p>
+  )
 }
 
 Page.getLayout = function getLayout(page: ReactElement) {
