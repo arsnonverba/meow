@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        abhayalibre: ['abhayalibre'],
+        din: ['din'],
         sans: ['sans-serif'],
-        nunito: ['nunito'],
+        basier: ['basier'],
       },
       colors: {
         transparent: 'transparent',

@@ -23,13 +23,13 @@
 @tailwind variants;
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply font-din font-bold text-2xl;
   }
   h2 {
-    @apply text-xl;
+    @apply font-basier italic text-base;
   }
   p {
-    @apply text-base;
+    @apply font-basier font-normal text-base;
   }
 }
 @layer components {
@@ -97,37 +97,48 @@ a {
   }
 }
 @font-face {
-  font-family: 'nunito';
+  font-family: 'basier';
   font-style: normal;
   font-weight: 300;
-  src: local(''), url('/fonts/nunito/nunito-light-webfont.woff2') format('woff2');
+  src: local(''), url('/fonts/basier/basiercircle-regular-webfont.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'nunito';
   font-style: italic;
   font-weight: 300;
-  src: local(''), url('/fonts/nunito/nunito-lightitalic-webfont.woff') format('woff2');
+  src: local(''), url('/fonts/basier/basiercircle-regularitalic-webfont.woff') format('woff2');
 }
 
 @font-face {
-  font-family: 'nunito';
+  font-family: 'basier';
   font-style: normal;
   font-weight: 600;
-  src: local(''), url('/fonts/nunito/nunito-semibold-webfont.woff2') format('woff2');
+  src: local(''), url('/fonts/basier/basiercircle-medium-webfont.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'nunito';
+  font-family: 'basier';
   font-style: italic;
   font-weight: 600;
-  src: local(''), url('/fonts/nunito/nunito-semibolditalic-webfont.woff2') format('woff2');
+  src: local(''), url('/fonts/basier/basiercirlcle-mediumitalic-webfont.woff2') format('woff2');
 }
 
-
 @font-face {
-  font-family: 'abhayalibre';
+  font-family: 'basier';
   font-style: normal;
   font-weight: 700;
-  src: local(''), url('/fonts/abhayalibre/abhayalibre-bold-webfont.woff2') format('woff2');
+  src: local(''), url('/fonts/basier/basiercircle-bold-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'basier';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''), url('/fonts/basier/basiercircle-bolditalic-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'din';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('/fonts/din/din-condbold-webfont.woff2') format('woff2');
 }
