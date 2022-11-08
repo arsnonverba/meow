@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import Link from 'next/Link';
 import cx from 'classnames';
-import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
+import { Menu, Transition } from '@headlessui/react';
 
-type Props = unknown;
-
-const navbar = (props: Props) => {
+export default function navbar() {
   return (
     <nav
       id="root"
@@ -27,12 +25,104 @@ const navbar = (props: Props) => {
         <div
           id="contentleft"
           className={cx(
-            "static grid place-content-center",
+            "static",
             "h-[100%] w-[25%]",
             "bg-green-500",
           )}
         >
-          <nav id="itemlist" className="flex flex-row gap-[1rem]">
+          <nav id="itemlist" className="relative flex flex-row gap-[1rem] mx-[.5rem]">
+            <Menu as="section" className="relative">
+              <Menu.Button
+                className={cx(
+                  "w-full mx-[.25rem] mt-[.5rem]",
+                  "hover:bg-violet-100 hover:animate-fadein hover:text-black",
+                )}
+              >
+                READ
+              </Menu.Button>
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
+              >
+              <Menu.Items
+                className={cx(
+                  "absolute grid content-center",
+                  "w-[25rem] h-[7rem] mt-[1rem] -ml-[.5rem] origin-top-left",
+                  "bg-white rounded-sm shadow-md",
+                  "focus:outline-none",
+                )}
+              >
+                <div className="flex flex-row justify-between">
+                  <li>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-violet-100' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          CATEGORY 2
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-violet-100' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          CATEGORY 2
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    </li>
+                    <li>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-violet-100' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          CATEGORY
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-violet-100' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          CATEGORY 2
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    </li>
+                    <div className="bg-red-900 mx-[1rem]">adadad</div>
+                  </div>
+                </Menu.Items>
+              </Transition>
+            </Menu>
           </nav>
         </div>
         <div
@@ -64,4 +154,3 @@ const navbar = (props: Props) => {
     </nav>
   );
 };
-export default navbar;
