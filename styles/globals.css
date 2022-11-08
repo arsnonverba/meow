@@ -23,21 +23,18 @@
 @tailwind variants;
 @layer base {
   h1 {
-    @apply font-din font-bold tracking-widest leading-[1rem] text-2xl;
+    @apply font-din font-bold tracking-wider text-2xl;
   }
   h2 {
-    @apply font-basier italic tracking-wider leading-[1rem] text-base;
+    @apply font-basier italic tracking-wider text-base;
   }
   p {
-    @apply font-basier font-normal tracking-wider leading-[1rem] text-base;
+    @apply font-basier font-normal tracking-wider text-base;
   }
 }
 @layer components {
   .main-skeleton {
     @apply relative bg-yellow-900 w-[100%] h-[100%] text-base;
-  }
-  .main-links {
-    @apply font-din font-bold tracking-widest leading-[1rem] text-2xl;
   }
   .btn-blue {
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
@@ -75,17 +72,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  .height-screen-helper {
-    height: calc(100vh - 80px);
-  }
-  .custom-box-shadow {
-    --webkit-box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
-    --moz-box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
-    box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
-  }
-  .custom-text-shadow {
-    text-shadow: 0px 0px 29px rgba(80,255,255,1);
-  }
 }
 * {
   box-sizing: border-box;
@@ -98,6 +84,14 @@ a {
     color: white;
     background: black;
   }
+}
+.custom-box-shadow {
+  --webkit-box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
+  --moz-box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
+  box-shadow: 0px 0px 58px 4px rgba(120,255,255,0.73);
+}
+.custom-text-shadow {
+  text-shadow: 0px 0px 29px rgba(80,255,255,1);
 }
 @font-face {
   font-family: 'basier';

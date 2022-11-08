@@ -20,6 +20,7 @@ const navbar = (props: Props) => {
         className={cx(
           "relative flex flex-row justify-between",
           "h-[100%] mx-[.5rem]",
+          "font-din text-2xl tracking-wider",
           "bg-yellow-500",
         )}
       >
@@ -27,33 +28,24 @@ const navbar = (props: Props) => {
           id="contentleft"
           className={cx(
             "static grid place-content-center",
-            "h-[100%] mx-[.5rem]",
+            "h-[100%] w-[25%] mx-[.5rem]",
             "bg-green-500",
           )}
         >
           <nav id="itemlist" className="flex flex-row gap-[1rem]">
-            <Link className="main-links" id="item1" href="/" aria-label="menu item">
-              item
-            </Link>
-            <Link className="main-links" id="item2" href="/" aria-label="menu item">
-              item 2
-            </Link>
           </nav>
         </div>
         <div
           id="contentcenter"
           className={cx(
             "static grid place-content-center",
-            "h-[100%] mx-[.5rem]",
+            "h-[100%] w-[25%] mx-[.5rem]",
             "bg-green-500",
           )}
         >
           <nav id="itemlist" className="flex flex-row gap-[1rem]">
-            <Link className="main-links" id="item1" href="/" aria-label="menu item">
+            <Link id="item1" href="/" aria-label="menu item">
               item
-            </Link>
-            <Link className="main-links" id="item2" href="/" aria-label="menu item">
-              item 2
             </Link>
           </nav>
         </div>
@@ -61,17 +53,12 @@ const navbar = (props: Props) => {
           id="contentright"
           className={cx(
             "static grid place-content-center",
-            "h-[100%] mx-[.5rem]",
+            "h-[100%] w-[25%] mx-[.5rem]",
             "bg-green-500",
           )}
         >
-          <nav id="itemlist" className="flex flex-row-reverse gap-[1rem]">
-            <Link className="main-links" id="item1" href="/" aria-label="menu item">
-              item
-            </Link>
-            <Link className="main-links" id="item2" href="/" aria-label="menu item">
-              item 2
-            </Link>
+          <nav id="itemlist">
+
           </nav>
         </div>
       </div>
