@@ -26,19 +26,22 @@ export default function navbar() {
           id="contentleft"
           className={cx(
             "static",
-            "h-[100%] w-[25%]",
-            "bg-green-500",
+            "h-[100%] w-[25%] my-[.5rem]",
+            "bg-white rounded-sm shadow.md text-black",
           )}
         >
           <nav id="itemlist" className="relative flex flex-row gap-[1rem] mx-[.5rem]">
             <Menu as="section" className="relative">
-              <Menu.Button
-                className={cx(
-                  "w-full mx-[.25rem] mt-[.5rem]",
-                  "hover:bg-violet-100 hover:animate-fadein hover:text-black",
-                )}
-              >
-                READ
+              <Menu.Button className="group flex w-full mx-[.25rem] mt-[.5rem]">
+                <div className="z-40">READ</div>
+                <div
+                  className={cx(
+                    "-ml-[2.9rem] w-[100%] h-[100%]",
+                    "text-transparent rounded-sm shadow-sm group-hover:bg-violet-800 group-hover:animate-fadein",
+                  )}
+                >
+                  READ
+                </div>
               </Menu.Button>
               <Transition
                 as={Fragment}
