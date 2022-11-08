@@ -28,7 +28,7 @@ const navbar = (props: Props) => {
           id="contentleft"
           className={cx(
             "static grid place-content-center",
-            "h-[100%] w-[25%] mx-[.5rem]",
+            "h-[100%] w-[25%]",
             "bg-green-500",
           )}
         >
@@ -39,12 +39,12 @@ const navbar = (props: Props) => {
           id="contentcenter"
           className={cx(
             "static grid place-content-center",
-            "h-[100%] w-[25%] mx-[.5rem]",
+            "h-[100%] w-[25%]",
             "bg-green-500",
           )}
         >
           <nav id="itemlist" className="flex flex-row gap-[1rem]">
-            <Link id="item1" href="/" aria-label="menu item">
+            <Link href="/">
               item
             </Link>
           </nav>
@@ -53,12 +53,11 @@ const navbar = (props: Props) => {
           id="contentright"
           className={cx(
             "static grid place-content-center",
-            "h-[100%] w-[25%] mx-[.5rem]",
+            "h-[100%] w-[25%]",
             "bg-green-500",
           )}
         >
           <nav id="itemlist">
-
           </nav>
         </div>
       </div>
