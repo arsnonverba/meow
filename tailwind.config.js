@@ -41,15 +41,19 @@ module.exports = {
         },
         fadein: {
           '0%': { opacity: '0', transform: 'translateY(0)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+          '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+
         },
         fadeindown: {
           '0%': { opacity: '0', transform: 'translateY(-10px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fadeinright: {
-          '0%': { opacity: '0', transform: 'translateX(-40px)' },
+          '0%': { opacity: '0', transform: 'translateX(-30px)' },
+          '80%': { opacity: '1', transform: 'translateY(0)' },
+          '90%': { opacity: '1', transform: 'translateX(5px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+
         },
         fadeinleft: {
           '0%': { opacity: '0', transform: 'translateX(40px)' },
@@ -65,7 +69,7 @@ module.exports = {
         flip: 'flip .7s',
         fadein: 'fadein .5s ease-in',
         fadeindown: 'fadeindown 1s ease-in',
-        fadeinright: 'fadeinright 1.5s ease-in',
+        fadeinright: 'fadeinright .5s ease-in',
         fadeinleft: 'fadeinleft 1.5s ease-in',
         fadeout: 'fadeout 2s',
       },
