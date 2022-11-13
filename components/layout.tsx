@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
-import Navbar from 'components/layout/navbar';
+import Navbar from './layout/navbar';
 
 interface PageMeta {
   title: string;

@@ -58,6 +58,9 @@
   .height-screen-helper {
     height: calc(100vh - 80px);
   }
+  .hidden-no {
+    display: yes;
+  }
 }
 html,
 body {

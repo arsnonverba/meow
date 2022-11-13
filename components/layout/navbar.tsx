@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import Link from 'next/Link';
+import Link from 'next/link';
 import cx from 'classnames';
 import { Menu, Transition } from '@headlessui/react';
 
@@ -34,7 +34,7 @@ export default function navbar() {
             id="itemlist"
             className={cx(
               "relative flex",
-              " w-[20rem] h-[100%]",
+              " md:w-[28rem] w-[15rem] h-[100%]",
               " bg-white rounded-sm shadow-md",
             )}
           >
@@ -61,7 +61,7 @@ export default function navbar() {
               <Menu.Items
                 className={cx(
                   "absolute grid content-center",
-                  "w-[20rem] h-[7rem] mt-[2.9rem] -ml-[.5rem] origin-top",
+                  "md:w-[28rem] w-[10rem] h-[7rem] mt-[2.9rem] -ml-[.5rem] origin-top",
                   "bg-white rounded-sm rounded-t-none shadow-md",
                   "focus:outline-none",
                 )}
@@ -132,16 +132,23 @@ export default function navbar() {
                 </Menu.Items>
               </Transition>
             </Menu>
-            <Menu as="section" className="relative flex mx-[.5rem]">
-              <Menu.Button className="group flex w-full mx-[.25rem] mt-[.5rem]">
+            <Menu as="section" className="relative flex md:mx-[.5rem] mx-0">
+              <Menu.Button
+                className={cx(
+                  "group flex",
+                  "w-full mx-[.25rem] mt-[.5rem]",
+                  "md:inline-flex hidden",
+                )}
+              >
                 <div className="z-40">FOLLOW</div>
-                <div
+                <span
                   className={cx(
                     "bg-red-400 -ml-[4.5rem] w-[4.8rem] h-[80%]",
                     "text-transparent rounded-sm shadow-sm group-hover:bg-violet-800 group-hover:animate-fadein",
+
                   )}
                 >
-                </div>
+                </span>
               </Menu.Button>
               <Transition
                 as={Fragment}
@@ -155,7 +162,7 @@ export default function navbar() {
               <Menu.Items
                 className={cx(
                   "absolute grid content-center",
-                  "w-[20rem] h-[7rem] mt-[2.9rem] -ml-[5.03rem] origin-top",
+                  "md:w-[28rem] w-[15rem] h-[7rem] mt-[2.9rem] -ml-[5.03rem] origin-top",
                   "bg-white rounded-sm rounded-t-none shadow-md",
                   "focus:outline-none",
                 )}
@@ -226,8 +233,14 @@ export default function navbar() {
                 </Menu.Items>
               </Transition>
             </Menu>
-            <Menu as="section" className="relative flex mx-[.5rem]">
-              <Menu.Button className="group flex w-full mx-[.25rem] mt-[.5rem]">
+            <Menu as="section" className="relative flex md:mx-[.5rem] mx-0">
+              <Menu.Button
+                className={cx(
+                  "group flex",
+                  "w-full mx-[.25rem] mt-[.5rem]",
+                  "md:inline-flex hidden",
+                )}
+              >
                 <div className="z-40">MANIFESTO</div>
                 <div
                   className={cx(
@@ -362,6 +375,7 @@ export default function navbar() {
           )}
         >
           <nav id="itemlist">
+
           </nav>
         </div>
       </div>
