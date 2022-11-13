@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import cx from 'classnames';
 import { Menu, Transition } from '@headlessui/react';
 
@@ -25,7 +26,7 @@ export default function navbar() {
         <div
           id="contentleft"
           className={cx(
-            "static",
+            "static z-40",
             "h-[100%] w-[25%] my-[.5rem]",
             "text-black",
           )}
@@ -418,7 +419,6 @@ export default function navbar() {
                           )}
                         </Menu.Item>
                       </ul>
-
                     </li>
                     <div className="bg-secondary w-[300px] h-[300px] mx-[1rem]">
                       ad
@@ -433,28 +433,55 @@ export default function navbar() {
         <div
           id="contentcenter"
           className={cx(
-            "static grid place-content-center",
-            "h-[100%] w-[25%]",
-            "bg-green-500",
+            "relative z-30 flex place-content-center",
+            "h-[100%] w-[25%] my-[.5rem]",
+            "bg-transparent",
           )}
         >
-          <nav id="itemlist" className="flex flex-row gap-[1rem]">
+          <nav
+            id="logo"
+            className={cx(
+              "absolute flex flex-row gap-[1rem]",
+              "w-[3.5rem] h-[3.5rem]",
+              "animate-[flip_5s_1s_infinite]",
+            )}
+          >
             <Link href="/">
-              item
+              <Image
+                src="/logo.svg"
+                fill
+                alt="meow logo"
+                className="hidden lg:inline-flex"
+              />
             </Link>
           </nav>
         </div>
         <div
           id="contentright"
           className={cx(
-            "static grid place-content-center",
-            "h-[100%] w-[25%]",
-            "bg-green-500",
+            "relative z-30 flex place-content-center",
+            "h-[100%] w-[25%] my-[.5rem]",
+            "bg-transparent",
           )}
         >
-          <nav id="itemlist">
-
+        <nav
+            id="logo"
+            className={cx(
+              "absolute flex flex-row gap-[1rem]",
+              "w-[3.2rem] h-[3.2rem]",
+              "animate-[flip_5s_1s_infinite]",
+            )}
+          >
+            <Link href="/">
+              <Image
+                src="/logo.svg"
+                fill
+                alt="meow logo"
+                className="lg:hidden"
+              />
+            </Link>
           </nav>
+
         </div>
       </div>
     </nav>
