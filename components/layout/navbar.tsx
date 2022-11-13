@@ -34,7 +34,7 @@ export default function navbar() {
             id="itemlist"
             className={cx(
               "relative flex",
-              " md:w-[28rem] w-[15rem] h-[100%]",
+              " md:w-[28rem] w-[14rem] h-[100%]",
               " bg-white bg-watermark bg-right-bottom bg-no-repeat rounded-sm shadow-md",
             )}
           >
@@ -44,7 +44,7 @@ export default function navbar() {
                 <div
                   className={cx(
                     "-ml-[3rem] w-[3.3rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
+                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
                   )}
                 >
                 </div>
@@ -61,12 +61,12 @@ export default function navbar() {
               <Menu.Items
                 className={cx(
                   "absolute grid content-center",
-                  "md:w-[28rem] w-[10rem] h-[7rem] mt-[2.9rem] -ml-[.5rem] origin-top",
+                  "md:w-[28rem] w-[14rem] md:h-[11rem] h-[20rem] mt-[2.9rem] -ml-[.5rem] origin-top",
                   "bg-white rounded-sm rounded-t-none shadow-md",
                   "focus:outline-none",
                 )}
               >
-                <div className="flex flex-row justify-between list-none">
+                <div className="flex md:flex-row flex-col justify-between list-none">
                   <li className="animate-fadeinright">
                     <ul>
                     <Menu.Item>
@@ -74,10 +74,10 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
-                          CATEGORY
+                          STORIES
                         </Link>
                       )}
                     </Menu.Item>
@@ -88,10 +88,38 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
-                          CATEGORY 2
+                          FASHION
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-alt' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          BEAUTY
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-alt' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          CULTURE
                         </Link>
                       )}
                     </Menu.Item>
@@ -104,10 +132,10 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
-                          CATEGORY
+                          HIGHLIGHTS
                         </Link>
                       )}
                     </Menu.Item>
@@ -118,16 +146,44 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
-                          CATEGORY 2
+                          PLAY ME
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-alt' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          THINK
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    </ul>
+                    <ul>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          href="/"
+                          className={`${
+                            active ? 'text-alt' : 'text-gray-900'
+                          } group flex w-full items-center mx-[1rem]`}
+                        >
+                          TRAVEL SERIES
                         </Link>
                       )}
                     </Menu.Item>
                     </ul>
                     </li>
-                    <div className="bg-red-900 mx-[1rem]">adadad</div>
+                    <div className="bg-secondary w-[150px] h-[150px] mx-[1rem] hidden md:inline-flex">ad</div>
                   </div>
                 </Menu.Items>
               </Transition>
@@ -144,7 +200,7 @@ export default function navbar() {
                 <span
                   className={cx(
                     "-ml-[4.5rem] w-[4.8rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
+                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
 
                   )}
                 >
@@ -162,7 +218,7 @@ export default function navbar() {
               <Menu.Items
                 className={cx(
                   "absolute grid content-center",
-                  "md:w-[28rem] w-[15rem] h-[7rem] mt-[2.9rem] -ml-[5.03rem] origin-top",
+                  "md:w-[28rem] w-[15rem] h-[11rem] mt-[2.9rem] -ml-[5.03rem] origin-top",
                   "bg-white rounded-sm rounded-t-none shadow-md",
                   "focus:outline-none",
                 )}
@@ -175,7 +231,7 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
                           TWITTER
@@ -189,7 +245,7 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
                           FACEBOOK
@@ -205,7 +261,7 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
                           TIKTOK
@@ -219,7 +275,7 @@ export default function navbar() {
                         <Link
                           href="/"
                           className={`${
-                            active ? 'text-violet-100' : 'text-gray-900'
+                            active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
                          INSTAGRAM
@@ -228,7 +284,7 @@ export default function navbar() {
                     </Menu.Item>
                     </ul>
                     </li>
-                    <div className="bg-red-900 mx-[1rem]">adadad</div>
+                    <div className="bg-secondary w-[150px] h-[150px] mx-[1rem]">ad</div>
                   </div>
                 </Menu.Items>
               </Transition>
@@ -245,19 +301,26 @@ export default function navbar() {
                 <div
                   className={cx(
                     "-ml-[6.1rem] w-[6.4rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
+                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
                   )}
                 >
                 </div>
               </Menu.Button>
             </Menu>
             <Menu as="section" className="relative flex mx-[.5rem]">
-              <Menu.Button id="mobile-menu" className="group flex w-full mx-[.25rem] mt-[.5rem]">
+              <Menu.Button
+                id="mobile-menu"
+                className={cx(
+                  "group flex",
+                  "w-full mx-[.25rem] mt-[.5rem]",
+                  "md:hidden",
+                )}
+              >
                 <div className="z-40">MENU</div>
                 <div
                   className={cx(
                     "-ml-[3.2rem] w-[3.5rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
+                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
                   )}
                 >
                 </div>
@@ -301,7 +364,7 @@ export default function navbar() {
                         <Link
                           href="#"
                           className={`${
-                            active ? 'text-violet-500 transition ease-in-out duration-200' : 'text-gray-900'
+                            active ? 'text-secondary transition ease-in-out duration-200' : 'text-gray-900'
                           } group font-basier font-bold flex items-center mx-[1rem]`}
                         >
                           X
@@ -319,7 +382,7 @@ export default function navbar() {
                             <Link
                               href="#"
                               className={`${
-                                active ? 'text-violet-100' : 'text-gray-900'
+                                active ? 'text-secondary' : 'text-gray-900'
                               } group flex w-full items-center mx-[1rem]`}
                             >
                               FOLLOW
@@ -333,7 +396,7 @@ export default function navbar() {
                             <Link
                               href="/"
                               className={`${
-                                active ? 'text-violet-100' : 'text-gray-900'
+                                active ? 'text-secondary' : 'text-gray-900'
                               } group flex w-full items-center mx-[1rem]`}
                             >
                               MANIFESTO
@@ -347,7 +410,7 @@ export default function navbar() {
                             <Link
                               href="#"
                               className={`${
-                                active ? 'text-violet-100' : 'text-gray-900'
+                                active ? 'text-secondary' : 'text-gray-900'
                               } group flex w-full items-center mx-[1rem]`}
                             >
                               CLOSE
