@@ -14,12 +14,12 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'bg': '#F9F1FD',
-        'primary': '#9007E0',
-        'secondary': '#B106B8',
-        'alt': '#D6048A',
-        'white': '#FFFFFF',
-        'black': '#1D012E',
+        'bg': '#F4EDF4',
+        'primary': '#CAA5C7',
+        'secondary': '#F8D07B',
+        'alt': '#B9DBE7',
+        'white': '#F7F3F9',
+        'black': '#2E262E',
       },
       backgroundImage: {
         'watermark': "url('/watermark.svg')",

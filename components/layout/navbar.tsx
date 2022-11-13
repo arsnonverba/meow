@@ -35,7 +35,7 @@ export default function navbar() {
             className={cx(
               "relative flex",
               " md:w-[28rem] w-[15rem] h-[100%]",
-              " bg-white rounded-sm shadow-md",
+              " bg-white bg-watermark bg-right-bottom bg-no-repeat rounded-sm shadow-md",
             )}
           >
             <Menu as="section" className="relative flex mx-[.5rem]">
@@ -43,8 +43,8 @@ export default function navbar() {
                 <div className="z-40">READ</div>
                 <div
                   className={cx(
-                    "bg-red-400 -ml-[3rem] w-[3.3rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-violet-800 group-hover:animate-fadein",
+                    "-ml-[3rem] w-[3.3rem] h-[80%]",
+                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
                   )}
                 >
                 </div>
@@ -143,8 +143,8 @@ export default function navbar() {
                 <div className="z-40">FOLLOW</div>
                 <span
                   className={cx(
-                    "bg-red-400 -ml-[4.5rem] w-[4.8rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-violet-800 group-hover:animate-fadein",
+                    "-ml-[4.5rem] w-[4.8rem] h-[80%]",
+                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
 
                   )}
                 >
@@ -244,8 +244,8 @@ export default function navbar() {
                 <div className="z-40">MANIFESTO</div>
                 <div
                   className={cx(
-                    "bg-red-500 -ml-[6.1rem] w-[6.4rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-violet-800 group-hover:animate-fadein",
+                    "-ml-[6.1rem] w-[6.4rem] h-[80%]",
+                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
                   )}
                 >
                 </div>
@@ -256,8 +256,8 @@ export default function navbar() {
                 <div className="z-40">MENU</div>
                 <div
                   className={cx(
-                    "bg-red-400 -ml-[3.2rem] w-[3.5rem] h-[80%]",
-                    "text-transparent rounded-sm shadow-sm group-hover:bg-violet-800 group-hover:animate-fadein",
+                    "-ml-[3.2rem] w-[3.5rem] h-[80%]",
+                    "text-transparent rounded-sm shadow-sm group-hover:bg-alt group-hover:animate-fadein",
                   )}
                 >
                 </div>
@@ -274,8 +274,8 @@ export default function navbar() {
               <Menu.Items
                 className={cx(
                   "fixed top-0 left-0 z-50",
-                  "w-[100vw] h-[100vh] origin-top",
-                  "bg-violet-800 rounded-sm rounded-t-none shadow-md",
+                  "w-[100vw] h-[100vh] origin-top overflow-auto",
+                  "bg-alt rounded-sm rounded-t-none shadow-md",
                   "focus:outline-none",
                 )}
               >
@@ -299,7 +299,7 @@ export default function navbar() {
                     <Menu.Item>
                       {({ active }) => (
                         <Link
-                          href="#root"
+                          href="#"
                           className={`${
                             active ? 'text-violet-500 transition ease-in-out duration-200' : 'text-gray-900'
                           } group font-basier font-bold flex items-center mx-[1rem]`}
@@ -310,7 +310,7 @@ export default function navbar() {
                     </Menu.Item>
                   </div>
                 </div>
-                <div className="h-[100%] w-[100%] grid place-content-center">
+                <div className="h-[140%] w-[100%] grid place-content-center">
                   <div className="flex flex-col gap-[2rem] list-none">
                     <li className="flex flex-col gap-[2rem] text-7xl animate-fadeinright">
                       <ul>
@@ -341,9 +341,24 @@ export default function navbar() {
                           )}
                         </Menu.Item>
                       </ul>
+                      <ul>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              href="#"
+                              className={`${
+                                active ? 'text-violet-100' : 'text-gray-900'
+                              } group flex w-full items-center mx-[1rem]`}
+                            >
+                              CLOSE
+                            </Link>
+                          )}
+                        </Menu.Item>
+                      </ul>
+
                     </li>
-                    <div className="bg-red-900 mx-[1rem]">
-                      adadad
+                    <div className="bg-secondary w-[300px] h-[300px] mx-[1rem]">
+                      ad
                     </div>
                   </div>
                 </div>
