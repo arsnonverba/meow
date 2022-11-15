@@ -26,7 +26,7 @@ export default function navbar() {
         <div
           id="contentleft"
           className={cx(
-            "static z-40",
+            "relative z-40",
             "h-[100%] w-[25%] my-[.5rem]",
             "text-black",
           )}
@@ -449,7 +449,8 @@ export default function navbar() {
             <Link href="/">
               <Image
                 src="/logo.svg"
-                fill
+                height={100}
+                width={100}
                 alt="meow logo"
                 className="hidden lg:inline-flex"
               />
@@ -475,7 +476,8 @@ export default function navbar() {
             <Link href="/">
               <Image
                 src="/logo.svg"
-                fill
+                height={100}
+                width={100}
                 alt="meow logo"
                 className="lg:hidden"
               />
