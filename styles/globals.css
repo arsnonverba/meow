@@ -40,8 +40,12 @@
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
   }
   .gradient-secondary {
-    @apply bg-gradient-to-r from-primary via-secondary to-alt;
+    @apply bg-gradient-to-r from-primary to-alt;
   }
+  .gradient-secondary-reversed {
+    @apply bg-gradient-to-r from-alt to-primary;
+  }
+
 }
 @layer utilities {
   .filter-none {

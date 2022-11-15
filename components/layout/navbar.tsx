@@ -41,7 +41,9 @@ export default function navbar() {
           >
             <Menu as="section" className="relative flex mx-[.5rem]">
               <Menu.Button  className="group flex w-full mx-[.25rem] mt-[.5rem]">
-                <div className="z-40">READ</div>
+                <div className="z-40">
+                  READ
+                </div>
                 <div
                   className={cx(
                     "-ml-[3rem] w-[3.3rem] h-[80%]",
@@ -197,12 +199,13 @@ export default function navbar() {
                   "md:inline-flex hidden",
                 )}
               >
-                <div className="z-40">FOLLOW</div>
+                <div className="z-40">
+                  FOLLOW
+                </div>
                 <span
                   className={cx(
                     "-ml-[4.5rem] w-[4.8rem] h-[80%]",
                     "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
-
                   )}
                 >
                 </span>
@@ -298,7 +301,9 @@ export default function navbar() {
                   "md:inline-flex hidden",
                 )}
               >
-                <div className="z-40">MANIFESTO</div>
+                <div className="z-40">
+                  MANIFESTO
+                </div>
                 <div
                   className={cx(
                     "-ml-[6.1rem] w-[6.4rem] h-[80%]",
@@ -317,7 +322,9 @@ export default function navbar() {
                   "md:hidden",
                 )}
               >
-                <div className="z-40">MENU</div>
+                <div className="z-40">
+                  MENU
+                </div>
                 <div
                   className={cx(
                     "-ml-[3.2rem] w-[3.5rem] h-[80%]",

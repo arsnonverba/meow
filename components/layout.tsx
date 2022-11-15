@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 import Navbar from './layout/navbar';
+import Outro from './layout/outro';
 
 interface PageMeta {
   title: string;
@@ -49,6 +50,7 @@ export default function Layout({ children, meta: pageMeta }: Props) {
       </Head>
       <Navbar />
       <main>{children}</main>
+      <Outro />
     </>
   )
 }
