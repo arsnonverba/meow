@@ -450,7 +450,7 @@ export default function navbar() {
             className={cx(
               "absolute flex flex-row gap-[1rem]",
               "w-[3.5rem] h-[3.5rem]",
-              "animate-[flip_5s_1s_infinite]",
+              "animate-[flip_5s_2s_infinite]",
             )}
           >
             <Link href="/">
@@ -477,7 +477,7 @@ export default function navbar() {
             className={cx(
               "absolute flex flex-row gap-[1rem]",
               "w-[3.2rem] h-[3.2rem]",
-              "animate-[flip_5s_1s_infinite]",
+              "animate-[flip_5s_2s_infinite]",
             )}
           >
             <Link href="/">

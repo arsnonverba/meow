@@ -29,7 +29,7 @@ export default function outro() {
             "gradient-secondary hidden lg:inline-flex",
           )}
         >
-          <Marquee gradient={false} delay={1.5} speed={52} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={10} speed={90} loop={10} pauseOnHover={true}>
             <div className="flex flex-row gap-[10rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               INSTAGRAM
@@ -55,15 +55,15 @@ export default function outro() {
             "gradient-secondary lg:hidden",
           )}
         >
-          <Marquee gradient={false} delay={1.5} speed={52} loop={10} pauseOnHover={true}>
-            <div className="flex flex-row gap-[10rem]">
+          <Marquee gradient={false} delay={10} speed={52} loop={10} pauseOnHover={true}>
+            <div className="flex flex-row gap-[5rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               INSTAGRAM
             </Link>
             <Link href="#" aria-label="social media" className="hover:underline">
               TIKTOK
             </Link>
-            <span id="separator" className="w-[3rem]"/>
+            <span id="separator" className="w-[1rem]"/>
             </div>
           </Marquee>
         </div>
@@ -72,18 +72,18 @@ export default function outro() {
           className={cx(
             "flex",
             "h-[9rem] w-[100vw] py-[.5rem]",
-            "gradient-secondary lg:hidden",
+            "gradient-secondary-reverse lg:hidden",
           )}
         >
-          <Marquee gradient={false} delay={1.5} speed={52} loop={10} pauseOnHover={true}>
-            <div className="flex flex-row gap-[10rem]">
+          <Marquee gradient={false} delay={12} direction="right" speed={52} loop={10} pauseOnHover={true}>
+            <div className="flex flex-row gap-[5rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               FACEBOOK
             </Link>
             <Link href="#" aria-label="social media" className="hover:underline">
               TWITTER
             </Link>
-            <span id="separator" className="w-[3rem]"/>
+            <span id="separator" className="w-[1rem]"/>
             </div>
           </Marquee>
         </div>

@@ -42,7 +42,7 @@
   .gradient-secondary {
     @apply bg-gradient-to-r from-primary to-alt;
   }
-  .gradient-secondary-reversed {
+  .gradient-secondary-reverse {
     @apply bg-gradient-to-r from-alt to-primary;
   }
 
