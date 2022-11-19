@@ -60,12 +60,31 @@ export default function footer() {
         <div
           id="footer"
           className={cx(
-            "flex place-content-center",
+            "place-content-center",
             "m-[1rem]",
             "text-center lg:text-base text-xs text-uppercase text-primary tracking-wider",
           )}
         >
-          © 2022 · meow magazine · todos los derechos reservados · legal ·  obra:luisgl
+          <p>
+            © MEOW MAGAZINE 2022 ~ todos los derechos reservados · legal
+          <a
+            href="https://luis.gl"
+            className={cx(
+              "flex place-content-center",
+              "gap-[.2rem] p-[.7rem]",
+              "hover:animate-spin",
+            )}
+          >
+            <span>
+              <Image
+                src="/luisgl.svg"
+                height={16}
+                width={16}
+                alt="luis.gl"
+              />
+            </span>
+          </a>
+          </p>
         </div>
       </div>
     </section>
