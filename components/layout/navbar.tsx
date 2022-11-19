@@ -455,7 +455,7 @@ export default function navbar() {
           >
             <Link href="/">
               <Image
-                src="/logo.svg"
+                src="/mono.svg"
                 height={50}
                 width={50}
                 alt="meow logo"
@@ -482,7 +482,7 @@ export default function navbar() {
           >
             <Link href="/">
               <Image
-                src="/logo.svg"
+                src="/mono.svg"
                 height={50}
                 width={50}
                 alt="meow logo"

@@ -7,9 +7,9 @@ import Marquee from 'react-fast-marquee';
 export default function outro() {
   return (
     <section
-      id="mainlayer"
+      id="main-outro"
       className={cx(
-        "absolute z-10 flex flex-col",
+        "relative z-10 flex flex-col",
         "w-[100vw] lg:h-[70rem] h-[105rem]",
         "bg-white text-black",
       )}
@@ -117,7 +117,7 @@ export default function outro() {
             "lg:top-[15rem] top-[30rem] lg:right-[1rem] right-0",
           )}
         >
-          <div className="relative animate-[heart_1.2s_ease-in]">
+          <div className="relative lg:animate-[heart_1.2s_ease-in]">
             <Image
                 src="/heart.svg"
                 height={250}
@@ -126,7 +126,7 @@ export default function outro() {
                 className=""
               />
           </div>
-          <div className="relative animate-[heart_1s_ease-in-out] right-[13rem]">
+          <div className="relative lg:animate-[heart_1s_ease-in-out] right-[13rem]">
             <Image
                 src="/heart.svg"
                 height={200}
@@ -135,7 +135,7 @@ export default function outro() {
                 className=""
               />
           </div>
-          <div className="relative animate-[heart_.8s_ease-in]">
+          <div className="relative lg:animate-[heart_.8s_ease-in]">
             <Image
                 src="/heart.svg"
                 height={180}

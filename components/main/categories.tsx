@@ -3,10 +3,10 @@ import Link from 'next/link';
 import cx from 'classnames';
 import Marquee from 'react-fast-marquee';
 
-export default function outro() {
+export default function intro() {
   return (
     <section
-      id="mainlayer"
+      id="main-intro"
       className={cx(
         "relative z-10 flex flex-col",
         "w-[100vw] h-[100vh]",
