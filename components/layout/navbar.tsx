@@ -456,8 +456,8 @@ export default function navbar() {
             <Link href="/">
               <Image
                 src="/logo.svg"
-                height={100}
-                width={100}
+                height={50}
+                width={50}
                 alt="meow logo"
                 className="hidden lg:inline-flex"
               />
@@ -483,8 +483,8 @@ export default function navbar() {
             <Link href="/">
               <Image
                 src="/logo.svg"
-                height={100}
-                width={100}
+                height={50}
+                width={50}
                 alt="meow logo"
                 className="lg:hidden"
               />

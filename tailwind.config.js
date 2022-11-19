@@ -18,6 +18,7 @@ module.exports = {
         'primary': '#CAA5C7',
         'secondary': '#F8D07B',
         'alt': '#B9DBE7',
+        'highlight': 'F4ACAD',
         'white': '#F7F3F9',
         'black': '#2E262E',
       },

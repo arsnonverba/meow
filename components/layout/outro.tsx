@@ -8,9 +8,9 @@ export default function outro() {
     <section
       id="mainlayer"
       className={cx(
-        "relative z-10",
+        "relative z-10 flex flex-col",
         "w-[100vw] h-[100vh]",
-        "bg-bg text-black",
+        "bg-alt text-black",
       )}
     >
       <div
@@ -55,7 +55,7 @@ export default function outro() {
             "gradient-secondary lg:hidden",
           )}
         >
-          <Marquee gradient={false} delay={10} speed={52} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={10} speed={62} loop={10} pauseOnHover={true}>
             <div className="flex flex-row gap-[5rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               INSTAGRAM
@@ -75,7 +75,7 @@ export default function outro() {
             "gradient-secondary-reverse lg:hidden",
           )}
         >
-          <Marquee gradient={false} delay={12} direction="right" speed={52} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={12} direction="right" speed={62} loop={10} pauseOnHover={true}>
             <div className="flex flex-row gap-[5rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               FACEBOOK
@@ -87,6 +87,15 @@ export default function outro() {
             </div>
           </Marquee>
         </div>
+      </div>
+      <div
+        id="content bottom"
+        className={cx(
+          "absolute flex",
+          "",
+          "",
+        )}
+      >
       </div>
     </section>
   );

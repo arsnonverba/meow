@@ -45,7 +45,12 @@
   .gradient-secondary-reverse {
     @apply bg-gradient-to-r from-alt to-primary;
   }
-
+  .gradient-primary {
+    background-image: linear-gradient(45deg, #F8D07B, #CAA5C7, #CAA5C7, #F4ACAD, #F8D07B, #B9DBE7);
+  }
+  .gradient-primary-reverse {
+    background-image: linear-gradient(45deg, #B9DBE7, #F8D07B, #F4ACAD, #CAA5C7, #CAA5C7, #F8D07B);
+  }
 }
 @layer utilities {
   .filter-none {
