@@ -76,7 +76,7 @@ export default function outro() {
             "gradient-secondary-reverse lg:hidden",
           )}
         >
-          <Marquee gradient={false} delay={12} direction="right" speed={62} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={11} direction="right" speed={62} loop={10} pauseOnHover={true}>
             <div className="flex flex-row gap-[5rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               FACEBOOK
