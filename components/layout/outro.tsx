@@ -8,15 +8,15 @@ export default function outro() {
     <section
       id="mainlayer"
       className={cx(
-        "relative z-10 flex flex-col",
-        "w-[100vw] h-[100vh]",
-        "bg-alt text-black",
+        "absolute z-10 flex flex-col",
+        "w-[100vw] lg:h-[70rem] h-[105rem]",
+        "bg-bg text-black",
       )}
     >
       <div
         id="contenttop"
         className={cx(
-          "absolute flex flex-col",
+          "relative flex flex-col",
           "my-[6rem] gap-[5rem]",
           "bg-bg font-din text-7xl",
         )}
@@ -91,11 +91,14 @@ export default function outro() {
       <div
         id="content bottom"
         className={cx(
-          "absolute flex",
-          "",
-          "",
+          "relative flex",
+          "lg:m-[6rem] m-[1.5rem]",
+          "bg-transparent text-black font-basier lg:text-4xl text-2xl text-uppercase tracking-wider",
         )}
       >
+        <div>
+          meowmag© es una propuesta editorial digital con el objetivo de dar a conocer el lado fresco, inteligente y contemporáneo de la moda nacional e internacional a través del ejercicio periodístico comprometido y creativo. Asimismo, se enriquece con temas de belleza, música, cultura y estilo de vida que reflejan y envuelven al lector en una experiencia dinámica y accesible para ser un referente de lo que está pasando justo aquí y ahora. Creada completamente en la cdmx, con la colaboración de talentos nacionales e internacionales.
+        </div>
       </div>
     </section>
   );
