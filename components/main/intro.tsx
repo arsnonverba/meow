@@ -10,7 +10,7 @@ export default function outro() {
       className={cx(
         "relative z-10 flex flex-col",
         "w-[100vw] h-[100vh]",
-        "bg-bg text-black",
+        "bg-white text-black",
       )}
     >
       <div
