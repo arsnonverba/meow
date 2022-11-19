@@ -39,7 +39,7 @@ export default function footer() {
       <div
         id="contentbottom"
         className={cx(
-          "relative flex flex-col gap-[5rem]",
+          "relative flex flex-col lg:gap-[6rem] gap-[.5rem]",
           "bg-black",
         )}
       >
@@ -47,7 +47,7 @@ export default function footer() {
           id="logo"
           className={cx(
             "flex place-content-center",
-            "lg:mt-[10rem] mt-[5rem] m-[1rem]",
+            "lg:mt-[10rem] mt-[4rem] m-[1rem]",
           )}
         >
           <Image
@@ -62,7 +62,7 @@ export default function footer() {
           className={cx(
             "flex place-content-center",
             "m-[1rem]",
-            "text-center lg:text-lg text-sm text-uppercase text-primary tracking-wider",
+            "text-center lg:text-base text-xs text-uppercase text-primary tracking-wider",
           )}
         >
           © 2022 · meow magazine · todos los derechos reservados · legal ·  obra:luisgl
