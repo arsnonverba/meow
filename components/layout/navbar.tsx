@@ -11,7 +11,7 @@ export default function navbar() {
       className={cx(
         "sticky top-0 z-50",
         "w-[100%] h-[3rem]",
-        "bg-pink-500",
+        "bg-transparent",
       )}
     >
       <div
@@ -20,7 +20,7 @@ export default function navbar() {
           "relative flex flex-row justify-between",
           "h-[100%] mx-[.5rem]",
           "font-din text-2xl tracking-wider",
-          "bg-yellow-500",
+          "bg-transparent",
         )}
       >
         <div
@@ -490,7 +490,6 @@ export default function navbar() {
               />
             </Link>
           </nav>
-
         </div>
       </div>
     </nav>
