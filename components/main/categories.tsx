@@ -9,8 +9,8 @@ export default function intro() {
       id="main-intro"
       className={cx(
         "relative z-10 flex flex-col",
-        "w-[100vw] h-[100vh]",
-        "bg-white text-black",
+        "w-[100vw] 3xl:h-[60vh] lg:h-[75vh] h-[65rem]",
+        "bg-bg text-black",
       )}
     >
       <div

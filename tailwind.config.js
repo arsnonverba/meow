@@ -45,6 +45,12 @@ module.exports = {
           '20%': { opacity: '1', transform: 'translateY(0,-10%) scale(1)' },
           '100%': { opacity: '0', transform: 'scale(1.5)' },
         },
+        zoomout: {
+          '0%': { opacity: '0', transform: 'scale(0)' },
+          '20%': { opacity: '1', transform: 'translateY(0,-10%) scale(1)' },
+          '100%': { opacity: '0', transform: 'scale(15)' },
+        },
+
         fadein: {
           '0%': { opacity: '0', transform: 'translateY(0)' },
           '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
@@ -77,6 +83,7 @@ module.exports = {
         wiggle: 'wiggle 1.5s 1s',
         flip: 'flip .7s',
         heart: 'heart 1.5s ease-in-out',
+        zoomout: 'zoomout 3s ease-in-out',
         fadein: 'fadein .5s ease-in',
         fadeindown: 'fadeindown 1s ease-in',
         fadeintop: 'fadeintop 1s ease-in',
@@ -85,7 +92,7 @@ module.exports = {
         fadeout: 'fadeout 2s',
       },
       screens: {
-        '3xl': '1600px',
+        '3xl': '1920px',
       },
     },
     variants: {

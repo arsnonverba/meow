@@ -9,7 +9,7 @@ export default function navbar() {
     <nav
       id="root"
       className={cx(
-        "sticky top-0 z-50",
+        "sticky top-0 z-40",
         "w-[100%] h-[3rem]",
         "bg-transparent",
       )}

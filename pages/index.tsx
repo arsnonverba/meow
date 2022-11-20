@@ -6,16 +6,16 @@ import Categories from '../components/main/categories';
 
 const Page: NextPageWithLayout = () => {
   return (
-    <section
+    <div
       id="mainlayer"
       className={cx(
-        "relative z-10 flex place-content-center",
-        "w-[100vw] lg:h-[75vh] h-[65rem]",
+        "relative z-10 flex flex-col place-content-center",
+        "w-[100vw] h-[100%]",
         "bg-bg text-black",
       )}
     >
       <Categories />
-    </section>
+    </div>
   )
 }
 
