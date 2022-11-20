@@ -3,7 +3,7 @@ import Link from 'next/link';
 import cx from 'classnames';
 import Marquee from 'react-fast-marquee';
 
-export default function intro() {
+export default function categories() {
   return (
     <section
       id="main-intro"
