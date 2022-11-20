@@ -10,7 +10,7 @@ export default function navbar() {
       id="root"
       className={cx(
         "sticky top-0 z-40",
-        "w-[100%] h-[3rem]",
+        "w-[100vw] h-[0rem]",
         "bg-transparent",
       )}
     >
@@ -18,7 +18,7 @@ export default function navbar() {
         id="mainlayer"
         className={cx(
           "relative flex flex-row justify-between",
-          "h-[100%] mx-[.5rem]",
+          "w-[100%] h-[100%] mx-[.5rem]",
           "font-din text-2xl tracking-wider",
           "bg-transparent",
         )}
@@ -35,7 +35,7 @@ export default function navbar() {
             id="itemlist"
             className={cx(
               "relative flex",
-              " md:w-[28rem] w-[14rem] h-[100%]",
+              " md:w-[28rem] w-[14rem] h-[3rem]",
               " bg-white bg-watermark bg-right-bottom bg-no-repeat rounded-sm shadow-md",
             )}
           >

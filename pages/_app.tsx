@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page)
 
   return getLayout(
-    <section className="main-skeleton">
+    <section>
       { !loading ? (
         <Component {...pageProps} />
       ) : (
