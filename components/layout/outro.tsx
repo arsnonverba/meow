@@ -114,7 +114,7 @@ export default function outro() {
           id="watermark"
           className={cx(
             "absolute z-10 flex flex-col",
-            "lg:top-[15rem] top-[30rem] 3xl:right-[3rem] lg:right-[1rem] right-0",
+            "lg:top-[15rem] top-[30rem] 3xl:right-[3rem] lg:right-[2rem] right-0",
           )}
         >
           <div className="relative lg:animate-[heart_1.2s_ease-in]">

@@ -68,6 +68,7 @@ export default function categories() {
             <Link href="#" aria-label="social media" className="hover:underline">
               TRAVEL SERIES
             </Link>
+            <span id="separator" className="w-[1rem] 3xl:w-0"/>
             </div>
           </Marquee>
         </div>
