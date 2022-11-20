@@ -345,7 +345,7 @@ export default function navbar() {
               <Menu.Items
                 className={cx(
                   "fixed top-0 left-0 z-50",
-                  "w-[100vw] h-[100vh] origin-top overflow-auto",
+                  "w-[100vw] h-[105vh] origin-top overflow-auto",
                   "bg-alt rounded-sm rounded-t-none shadow-md",
                   "focus:outline-none",
                 )}
