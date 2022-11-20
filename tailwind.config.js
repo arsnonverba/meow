@@ -92,7 +92,8 @@ module.exports = {
         fadeout: 'fadeout 2s',
       },
       screens: {
-        '3xl': '1920px',
+        '3xl': '1600px',
+        '4xl': '1920px',
       },
     },
     variants: {

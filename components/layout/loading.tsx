@@ -36,6 +36,8 @@ export default function loading() {
           id="hearts"
           className={cx(
             "absolute z-10 flex flex-col place-content-center",
+            "4xl:top-[20vh] 4xl:right-[35vw]",
+            "3xl:top-[15vh] 3xl:right-[33vw]",
             "top-[10vh] right-[30vw] hidden lg:inline-flex",
           )}
         >

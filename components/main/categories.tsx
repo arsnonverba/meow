@@ -9,7 +9,7 @@ export default function categories() {
       id="main-intro"
       className={cx(
         "relative z-10 flex flex-col",
-        "w-[100vw] 3xl:h-[60vh] lg:h-[75vh] h-[65rem]",
+        "w-[100vw] 4xl:h-[60vh] lg:h-[75vh] h-[65rem]",
         "bg-bg text-black",
       )}
     >
@@ -30,7 +30,7 @@ export default function categories() {
           )}
         >
           <Marquee gradient={false} delay={6} speed={90} loop={5} pauseOnHover={true}>
-            <div className="flex flex-row gap-[10rem]">
+            <div className="flex flex-row gap-[10rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               STORIES
             </Link>
@@ -55,7 +55,7 @@ export default function categories() {
           )}
         >
           <Marquee gradient={false} delay={5} speed={90} direction="right" loop={5} pauseOnHover={true}>
-            <div className="flex flex-row gap-[10rem]">
+            <div className="flex flex-row gap-[10rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               HIGHLIGHTS
             </Link>
@@ -68,7 +68,6 @@ export default function categories() {
             <Link href="#" aria-label="social media" className="hover:underline">
               TRAVEL SERIES
             </Link>
-            <span id="separator" className="w-[1rem]"/>
             </div>
           </Marquee>
         </div>

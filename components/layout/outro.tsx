@@ -31,7 +31,7 @@ export default function outro() {
           )}
         >
           <Marquee gradient={false} delay={10} speed={90} loop={10} pauseOnHover={true}>
-            <div className="flex flex-row gap-[10rem]">
+            <div className="flex flex-row gap-[10rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
             <Link href="#" aria-label="social" className="hover:underline">
               INSTAGRAM
             </Link>
@@ -114,7 +114,7 @@ export default function outro() {
           id="watermark"
           className={cx(
             "absolute z-10 flex flex-col",
-            "lg:top-[15rem] top-[30rem] lg:right-[1rem] right-0",
+            "lg:top-[15rem] top-[30rem] 3xl:right-[3rem] lg:right-[1rem] right-0",
           )}
         >
           <div className="relative lg:animate-[heart_1.2s_ease-in]">
