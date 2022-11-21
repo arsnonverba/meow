@@ -93,7 +93,7 @@ export default function outro() {
         id="content bottom"
         className={cx(
           "relative",
-          "",
+          "w-[100%]",
           "bg-transparent text-black font-basier lg:text-4xl text-2xl text-uppercase tracking-wider",
         )}
       >

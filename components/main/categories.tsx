@@ -17,7 +17,7 @@ export default function categories() {
         id="content"
         className={cx(
           "absolute flex flex-col",
-          "my-[8rem] gap-[5rem]",
+          "py-[8rem] gap-[5rem]",
           "bg-bg font-din text-7xl",
         )}
       >

@@ -8,17 +8,17 @@ export default function footer() {
     <section
       id="main-footer"
       className={cx(
-        "relative z-10 flex flex-col",
-        "w-[100vw] lg:h-[100%]",
+        "relative z-10",
+        "w-[100vw] h-[100vh]",
         "bg-bg text-black",
       )}
     >
       <div
         id="contenttop"
         className={cx(
-          "relative flex place-content-center",
-          "my-[6rem]",
-          "bg-bg font-din text-7xl text-center",
+          "relative flex-col lg:gap-[6rem] gap-[.5rem]",
+          "w-[100%] py-[4rem]",
+          "bg-bg font-din text-6xl text-center",
         )}
       >
         <div className="flex flex-col gap-[3rem]">
@@ -39,29 +39,29 @@ export default function footer() {
       <div
         id="contentbottom"
         className={cx(
-          "relative flex flex-col lg:gap-[6rem] gap-[.5rem]",
+          "relative flex-col lg:gap-[6rem] gap-[.5rem]",
           "bg-black",
         )}
       >
         <div
           id="logo"
           className={cx(
-            "flex place-content-center",
-            "lg:mt-[10rem] mt-[4rem] m-[1rem]",
+            "relative",
+            "w-[100vw] lg:h-[60vh] h-[30vh]",
           )}
         >
           <Image
             src="/logo.svg"
-            height={1300}
-            width={1300}
+            fill
+            sizes
             alt="meowmag"
           />
         </div>
         <div
           id="footer"
           className={cx(
-            "place-content-center",
-            "m-[1rem]",
+            "relative place-content-center",
+            "p-[1rem]",
             "text-center lg:text-base text-xs text-uppercase text-primary tracking-wider",
           )}
         >

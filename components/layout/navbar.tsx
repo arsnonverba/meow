@@ -18,7 +18,7 @@ export default function navbar() {
         id="mainlayer"
         className={cx(
           "relative flex flex-row justify-between",
-          "w-[100%] h-[100%] mx-[.5rem]",
+          "w-[100%] h-[100%] px-[.5rem]",
           "font-din text-2xl tracking-wider",
           "bg-transparent",
         )}
@@ -27,7 +27,7 @@ export default function navbar() {
           id="contentleft"
           className={cx(
             "relative z-40",
-            "h-[100%] w-[25%] my-[.5rem]",
+            "h-[100%] w-[25%] py-[.5rem]",
             "text-black",
           )}
         >
@@ -345,7 +345,7 @@ export default function navbar() {
               <Menu.Items
                 className={cx(
                   "fixed top-0 left-0 z-50",
-                  "w-[100vw] h-[105vh] origin-top overflow-auto",
+                  "w-[100%] h-[100vh] origin-top overflow-auto",
                   "bg-alt rounded-sm rounded-t-none shadow-md",
                   "focus:outline-none",
                 )}
@@ -363,7 +363,7 @@ export default function navbar() {
                     id="contentright"
                     className={cx(
                       "relative flex justify-end",
-                      "h-[100%] w-[13%] my-[.5rem]",
+                      "h-[100%] w-[13%] pt-[1rem]",
                       "text-black",
                     )}
                   >
@@ -441,7 +441,7 @@ export default function navbar() {
           id="contentcenter"
           className={cx(
             "relative z-30 flex place-content-center",
-            "h-[100%] w-[25%] my-[.5rem]",
+            "h-[100%] w-[25%] py-[.5rem]",
             "bg-transparent",
           )}
         >
@@ -468,7 +468,7 @@ export default function navbar() {
           id="contentright"
           className={cx(
             "relative z-30 flex place-content-center",
-            "h-[100%] w-[25%] my-[.5rem]",
+            "h-[100%] w-[25%] py-[.5rem]",
             "bg-transparent",
           )}
         >

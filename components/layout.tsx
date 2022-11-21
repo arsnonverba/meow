@@ -51,10 +51,8 @@ export default function Layout({ children, meta: pageMeta }: Props) {
       </Head>
       <Navbar />
       <main>{children}</main>
-      <div className="absolute">
-        <Outro />
-        <Foot />
-      </div>
+      <Outro />
+      <Foot />
     </>
   );
 };

@@ -10,8 +10,8 @@ const Page: NextPageWithLayout = () => {
     <div
       id="mainlayer"
       className={cx(
-        "relative z-10 flex flex-col place-content-center",
-        "w-[100vw] h-[100%]",
+        "relative z-10",
+        "w-[100%] h-[100%]",
         "bg-bg text-black",
       )}
     >
