@@ -25,7 +25,7 @@ export default function intro() {
         <Image
             src="/beauty.jpg"
             fill
-            sizes
+            sizes="100vw"
             alt="meowmag"
             className="object-cover"
         />

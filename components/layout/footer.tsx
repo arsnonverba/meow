@@ -53,7 +53,7 @@ export default function footer() {
           <Image
             src="/logo.svg"
             fill
-            sizes
+            sizes="100vw"
             alt="meowmag"
           />
         </div>
