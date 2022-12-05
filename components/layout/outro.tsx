@@ -10,7 +10,7 @@ export default function outro() {
       id="main-outro"
       className={cx(
         "relative z-10 flex flex-col",
-        "w-[100vw] lg:h-[80rem] h-[105rem]",
+        "w-[100vw] lg:h-[100rem] h-[125rem]",
         "bg-white text-black",
       )}
     >
@@ -18,16 +18,23 @@ export default function outro() {
         id="contenttop"
         className={cx(
           "relative flex flex-col",
-          "my-[4rem] gap-[5rem]",
+          "my-[3rem] gap-[5rem]",
           "bg-white font-din text-7xl",
         )}
       >
         <div
           id="cat"
-          className="flex place-content-center cursor-pointer hover:underline"
+          className="flex place-content-center cursor-pointer hover:underline pb-[2rem]"
         >
           READ ALL
         </div>
+        <div
+          id="ad"
+          className="flex mb-[3rem] bg-secondary h-[10rem] w-[50%] mx-auto cursor-pointer"
+        >
+          ad
+        </div>
+
         <div
           id="marquee"
           className={cx(
