@@ -20,7 +20,7 @@ export default function intro() {
       slidesPerView={1}
       loop={true}
       autoplay={{
-        delay: 4000,
+        delay: 5000,
         disableOnInteraction: true,
       }}
       modules={[Autoplay]}
@@ -31,7 +31,7 @@ export default function intro() {
         className={cx(
           "relative",
           "w-[100vw] h-[100vh]",
-          "bg-bg",
+          "gradient-primary",
         )}
       >
         <Image
@@ -63,7 +63,7 @@ export default function intro() {
             fashion
           </div>
           <div className="m-[.5rem]">
-          <Marquee gradient={false} delay={3} speed={62} loop={5} pauseOnHover={true}>
+          <Marquee gradient={false} delay={1} speed={62} loop={5} pauseOnHover={true}>
             sentirte bien con lo que te pones, el feeling wear de florencia dávalos.
           </Marquee>
           </div>
