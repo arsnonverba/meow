@@ -9,7 +9,7 @@ export default function categories() {
       id="main-intro"
       className={cx(
         "relative z-10 flex flex-col",
-        "w-[100vw] 4xl:h-[60vh] lg:h-[75vh] h-[65rem]",
+        "w-[100vw] 4xl:h-[60vh] xl:h-[75vh] h-[65rem]",
         "bg-bg text-black",
       )}
     >
@@ -26,7 +26,7 @@ export default function categories() {
           className={cx(
             "flex",
             "h-[9rem] w-[100vw] py-[.5rem]",
-            "gradient-primary hidden lg:inline-flex",
+            "gradient-primary hidden xl:inline-flex",
           )}
         >
           <Marquee gradient={false} delay={6} speed={90} loop={5} pauseOnHover={true}>
@@ -51,7 +51,7 @@ export default function categories() {
           className={cx(
             "flex",
             "h-[9rem] w-[100vw] py-[.5rem]",
-            "gradient-primary-reverse hidden lg:inline-flex",
+            "gradient-primary-reverse hidden xl:inline-flex",
           )}
         >
           <Marquee gradient={false} delay={5} speed={90} direction="right" loop={5} pauseOnHover={true}>
@@ -77,7 +77,7 @@ export default function categories() {
           className={cx(
             "flex",
             "h-[9rem] w-[100vw] py-[.5rem]",
-            "gradient-primary lg:hidden",
+            "gradient-primary xl:hidden",
           )}
         >
           <Marquee gradient={false} delay={3} speed={62} loop={10} pauseOnHover={true}>
@@ -97,7 +97,7 @@ export default function categories() {
           className={cx(
             "flex",
             "h-[9rem] w-[100vw] py-[.5rem]",
-            "gradient-primary-reverse lg:hidden",
+            "gradient-primary-reverse xl:hidden",
           )}
         >
           <Marquee gradient={false} delay={2} speed={62} direction="right" loop={10} pauseOnHover={true}>
@@ -117,7 +117,7 @@ export default function categories() {
           className={cx(
             "flex",
             "h-[9rem] w-[100vw] py-[.5rem]",
-            "gradient-primary lg:hidden",
+            "gradient-primary xl:hidden",
           )}
         >
           <Marquee gradient={false} delay={5} speed={62} direction="left" loop={10} pauseOnHover={true}>
@@ -137,7 +137,7 @@ export default function categories() {
           className={cx(
             "flex",
             "h-[9rem] w-[100vw] py-[.5rem]",
-            "gradient-primary-reverse lg:hidden",
+            "gradient-primary-reverse xl:hidden",
           )}
         >
           <Marquee gradient={false} delay={3} speed={62} direction="right" loop={10} pauseOnHover={true}>

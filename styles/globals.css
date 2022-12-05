@@ -1,3 +1,4 @@
+@import './swiper.css';
 /**
  * This injects Tailwind's base styles and any base styles registered by
  * plugins.
@@ -29,7 +30,7 @@
     @apply font-basier italic tracking-wider text-base;
   }
   p {
-    @apply font-basier font-normal tracking-wider text-base;
+    @apply font-basier font-normal tracking-wider text-lg;
   }
 }
 @layer components {
