@@ -10,7 +10,7 @@ export default function post() {
       id="main-layout-post"
       className={cx(
         "relative flex place-content-center",
-        "w-[100vw] h-[100vh] sm:h-[40rem] md:h-[100vh]",
+        "w-[100vw] h-[100vh]",
         "bg-bg",
       )}
     >
@@ -18,8 +18,8 @@ export default function post() {
         id="post"
         className={cx(
           "group cursor-pointer relative flex flex-col m-auto",
-          "w-[40rem] md:w-[50rem] lg:w-[60rem] 2xl:w-[70rem] 4xl:w-[80rem]",
-          "h-[30rem] md:h-[40rem] lg:h-[40rem] 2xl:h-[50rem] 4xl:h-[60rem]",
+          "w-[20rem] sm:w-[40rem] lg:w-[60rem] 2xl:w-[70rem] 4xl:w-[80rem]",
+          "h-[30rem] sm:h-[40rem] lg:h-[40rem] 2xl:h-[50rem] 4xl:h-[60rem]",
           "bg-bg",
           "lg:hover:scale-105 transition duration-200 ease-in-out",
         )}
