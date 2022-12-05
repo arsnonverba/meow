@@ -4,7 +4,8 @@ import type { NextPageWithLayout } from './_app';
 import cx from 'classnames';
 import Intro from '../components/main/intro';
 import Categories from '../components/main/categories';
-import PostSlider from '../components/shared/post-featured';
+import PostFeat from '../components/shared/post-featured';
+import PostList from '../components/shared/post-list';
 
 const Page: NextPageWithLayout = () => {
   return (
@@ -18,7 +19,8 @@ const Page: NextPageWithLayout = () => {
     >
       <Intro />
       <Categories />
-      <PostSlider />
+      <PostFeat />
+      <PostList />
     </div>
   )
 }
