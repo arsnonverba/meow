@@ -47,7 +47,7 @@ export default function navbar() {
                 <div
                   className={cx(
                     "-ml-[3rem] w-[3.3rem] h-[80%]",
-                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
+                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:gradient-primary group-hover:animate-fadein",
                   )}
                 >
                 </div>
@@ -138,20 +138,6 @@ export default function navbar() {
                             active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
-                          HIGHLIGHTS
-                        </Link>
-                      )}
-                    </Menu.Item>
-                    </ul>
-                    <ul>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <Link
-                          href="/"
-                          className={`${
-                            active ? 'text-alt' : 'text-gray-900'
-                          } group flex w-full items-center mx-[1rem]`}
-                        >
                           PLAY ME
                         </Link>
                       )}
@@ -180,7 +166,7 @@ export default function navbar() {
                             active ? 'text-alt' : 'text-gray-900'
                           } group flex w-full items-center mx-[1rem]`}
                         >
-                          TRAVEL SERIES
+                          TRAVEL
                         </Link>
                       )}
                     </Menu.Item>
@@ -205,7 +191,7 @@ export default function navbar() {
                 <span
                   className={cx(
                     "-ml-[4.5rem] w-[4.8rem] h-[80%]",
-                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
+                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:gradient-secondary group-hover:animate-fadein",
                   )}
                 >
                 </span>
@@ -307,7 +293,7 @@ export default function navbar() {
                 <div
                   className={cx(
                     "-ml-[6.1rem] w-[6.4rem] h-[80%]",
-                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:bg-alt group-hover:animate-fadein",
+                    "text-transparent rounded-sm group-hover:shadow-sm group-hover:gradient-secondary group-hover:animate-fadein",
                   )}
                 >
                 </div>
@@ -440,8 +426,8 @@ export default function navbar() {
         <div
           id="contentcenter"
           className={cx(
-            "relative z-30 flex place-content-center",
-            "h-[100%] w-[25%] py-[.5rem]",
+            "relative z-30 flex",
+            "h-[100%] w-[25%] py-[.5rem] lg:pl-[2%]",
             "bg-transparent",
           )}
         >
@@ -449,18 +435,38 @@ export default function navbar() {
             id="logo"
             className={cx(
               "absolute flex flex-row gap-[1rem]",
-              "w-[3.5rem] h-[3.5rem]",
-              "animate-[flip_5s_2.5s_infinite]",
+              "w-[100%] h-[3.5rem]",
+              "bg-transparent",
             )}
           >
             <Link href="/">
-              <Image
-                src="/mono.svg"
-                height={50}
-                width={50}
-                alt="meow logo"
-                className="hidden lg:inline-flex"
-              />
+              <div
+                id="logo-image"
+                className={cx(
+                  "group cursor-pointer relative flex flex-col m-auto",
+                  "w-[18.5rem]",
+                  "h-[100%]",
+                  "bg-transparent",
+                  "lg:hover:scale-105 transition duration-200 ease-in-out hidden lg:inline-flex",
+                )}
+              >
+                <div
+                  id="content-image"
+                  className={cx(
+                    "relative",
+                    "w-[100%] h-[100%]",
+                    "",
+                  )}
+                >
+                  <Image
+                    src="/logo.svg"
+                    fill
+                    sizes="100%"
+                    alt="meow-logo"
+                    className="drop-shadow-sm z-10 object-fill"
+                  />
+                </div>
+              </div>
             </Link>
           </nav>
         </div>
@@ -486,7 +492,7 @@ export default function navbar() {
                 height={50}
                 width={50}
                 alt="meow logo"
-                className="lg:hidden"
+                className="lg:hidden drop-shadow-sm"
               />
             </Link>
           </nav>

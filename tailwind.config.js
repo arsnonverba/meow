@@ -80,7 +80,7 @@ module.exports = {
         },
       },
       animation: {
-        wiggle: 'wiggle 1.5s 1s',
+        wiggle: 'wiggle 2.8s infinite ease-in-out',
         flip: 'flip .7s',
         heart: 'heart 1.5s ease-in-out',
         zoomout: 'zoomout 3s ease-in-out',

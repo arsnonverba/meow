@@ -29,8 +29,8 @@ export default function categories() {
             "gradient-primary hidden xl:inline-flex",
           )}
         >
-          <Marquee gradient={false} delay={6} speed={90} loop={5} pauseOnHover={true}>
-            <div className="flex flex-row gap-[10rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
+          <Marquee gradient={false} delay={6} speed={90} loop={40} pauseOnHover={true}>
+            <div className="flex flex-row gap-[9rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               STORIES
             </Link>
@@ -54,11 +54,8 @@ export default function categories() {
             "gradient-primary-reverse hidden xl:inline-flex",
           )}
         >
-          <Marquee gradient={false} delay={5} speed={90} direction="right" loop={5} pauseOnHover={true}>
-            <div className="flex flex-row gap-[10rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
-            <Link href="#" aria-label="social media" className="hover:underline">
-              HIGHLIGHTS
-            </Link>
+          <Marquee gradient={false} delay={5} speed={95} direction="right" loop={40} pauseOnHover={true}>
+            <div className="flex flex-row gap-[18rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               PLAY ME
             </Link>
@@ -66,7 +63,7 @@ export default function categories() {
               THINK
             </Link>
             <Link href="#" aria-label="social media" className="hover:underline">
-              TRAVEL SERIES
+              TRAVEL
             </Link>
             <span id="separator" className="w-[1rem] 3xl:w-0"/>
             </div>
@@ -80,7 +77,7 @@ export default function categories() {
             "gradient-primary xl:hidden",
           )}
         >
-          <Marquee gradient={false} delay={3} speed={62} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={3} speed={62} loop={60} pauseOnHover={true}>
             <div className="flex flex-row gap-[10rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               STORIES
@@ -100,7 +97,7 @@ export default function categories() {
             "gradient-primary-reverse xl:hidden",
           )}
         >
-          <Marquee gradient={false} delay={2} speed={62} direction="right" loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={2} speed={62} direction="right" loop={60} pauseOnHover={true}>
             <div className="flex flex-row gap-[10rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               BEAUTY
@@ -120,11 +117,8 @@ export default function categories() {
             "gradient-primary xl:hidden",
           )}
         >
-          <Marquee gradient={false} delay={5} speed={62} direction="left" loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={5} speed={62} direction="left" loop={60} pauseOnHover={true}>
             <div className="flex flex-row gap-[10rem]">
-            <Link href="#" aria-label="social media" className="hover:underline">
-              HIGHLIGHTS
-            </Link>
             <Link href="#" aria-label="social media" className="hover:underline">
               PLAY ME
             </Link>
@@ -140,13 +134,13 @@ export default function categories() {
             "gradient-primary-reverse xl:hidden",
           )}
         >
-          <Marquee gradient={false} delay={3} speed={62} direction="right" loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={3} speed={62} direction="right" loop={60} pauseOnHover={true}>
             <div className="flex flex-row gap-[10rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               THINK
             </Link>
             <Link href="#" aria-label="social media" className="hover:underline">
-              TRAVEL SERIES
+              TRAVEL
             </Link>
             <span id="separator" className="w-[1rem]"/>
             </div>

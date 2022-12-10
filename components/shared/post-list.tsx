@@ -14,12 +14,22 @@ export default function post() {
         "bg-white",
       )}
     >
+      <h1
+        id="pick-of-the-month"
+        className={cx(
+          "lg:w-[50%] w-[100%] mx-auto",
+          "lg:col-span-2 flex place-content-center",
+          "lg:animate-wiggle font-din text-7xl text-alt/30 py-[2rem]",
+        )}
+      >
+          LATEST
+      </h1>
       <div
         id="post"
         className={cx(
           "group cursor-pointer relative flex flex-col m-auto",
-          "w-[20rem] sm:w-[40rem] lg:w-[40rem] 2xl:w-[50rem] 4xl:w-[60rem]",
-          "h-[30rem] sm:h-[40rem] lg:h-[30rem] 2xl:h-[40rem] 4xl:h-[50rem]",
+          "w-[20rem] sm:w-[40rem] lg:w-[30rem] 2xl:w-[50rem] 4xl:w-[60rem]",
+          "h-[35rem] sm:h-[45rem] lg:h-[35rem] 2xl:h-[45rem] 4xl:h-[55rem]",
           "bg-white",
           "lg:hover:scale-105 transition duration-200 ease-in-out",
         )}
@@ -53,19 +63,12 @@ export default function post() {
             className={cx(
               "absolute z-20 flex bottom-0 place-content-end",
               "w-[100%] h-[10vh]",
-              "bg-transparent font-basier text-2xl text-uppercase",
+              "bg-transparent font-din text-2xl text-uppercase",
             )}
           >
-            <div className="flex-row w-[100%] h-[3rem] bg-white rounded-sm hidden lg:inline-flex">
+            <div className="flex-row w-[100%] h-[3rem] bg-white rounded-sm">
               <div className="bg-black p-[.5rem] text-bg  h-[100%] w-[100%]">
-                andrea zuckerman.
-              </div>
-            </div>
-            <div className="flex flex-row w-[100%] h-[3rem] bg-white rounded-sm lg:hidden">
-              <div className="bg-black p-[.5rem] text-bg h-[100%] w-[100%]">
-              <Marquee gradient={false} delay={3} speed={62} loop={5} pauseOnHover={true}>
-                andrea zuckerman.
-              </Marquee>
+                culture
               </div>
             </div>
           </div>
@@ -78,11 +81,11 @@ export default function post() {
             "bg-white font-basier",
           )}
         >
-          <div id="content-post-tags" className="font-bold text-primary text-sm text-uppercase">
-            activismo, feminismo, riot girl
-          </div>
           <div className="group-hover:underline">
-            <p className="text-base">
+            <h1 className="text-uppercase pb-[1rem]">
+              el feeling wear de andrea zuckerman por la cdmx.
+            </h1>
+            <p>
               Un grupo de amigas se reunieron para hacer un divertido STORY de moda que reflejara su amistad en una secuencia divertida, dulce y creativa.
             </p>
           </div>
@@ -92,8 +95,8 @@ export default function post() {
         id="post"
         className={cx(
           "group cursor-pointer relative flex flex-col m-auto",
-          "w-[20rem] md:w-[40rem] lg:w-[40rem] 2xl:w-[50rem] 4xl:w-[60rem]",
-          "h-[30rem] md:h-[40rem] lg:h-[30rem] 2xl:h-[40rem] 4xl:h-[50rem]",
+          "w-[20rem] sm:w-[40rem] lg:w-[30rem] 2xl:w-[50rem] 4xl:w-[60rem]",
+          "h-[35rem] sm:h-[45rem] lg:h-[35rem] 2xl:h-[45rem] 4xl:h-[55rem]",
           "bg-white",
           "lg:hover:scale-105 transition duration-200 ease-in-out",
         )}
@@ -127,19 +130,12 @@ export default function post() {
             className={cx(
               "absolute z-20 flex bottom-0 place-content-end",
               "w-[100%] h-[10vh]",
-              "bg-transparent font-basier text-2xl text-uppercase",
+              "bg-transparent font-din text-2xl text-uppercase",
             )}
           >
-            <div className="flex-row w-[100%] h-[3rem] bg-white rounded-sm hidden lg:inline-flex">
+            <div className="flex-row w-[100%] h-[3rem] bg-white rounded-sm">
               <div className="bg-black p-[.5rem] text-bg  h-[100%] w-[100%]">
-                andrea zuckerman.
-              </div>
-            </div>
-            <div className="flex flex-row w-[100%] h-[3rem] bg-white rounded-sm lg:hidden">
-              <div className="bg-black p-[.5rem] text-bg h-[100%] w-[100%]">
-              <Marquee gradient={false} delay={3} speed={62} loop={5} pauseOnHover={true}>
-                andrea zuckerman.
-              </Marquee>
+                culture
               </div>
             </div>
           </div>
@@ -152,11 +148,11 @@ export default function post() {
             "bg-white font-basier",
           )}
         >
-          <div id="content-post-tags" className="font-bold text-primary text-sm text-uppercase">
-            activismo, feminismo, riot girl
-          </div>
           <div className="group-hover:underline">
-            <p className="text-base">
+            <h1 className="text-uppercase pb-[1rem]">
+              el feeling wear de andrea zuckerman por la cdmx.
+            </h1>
+            <p>
               Un grupo de amigas se reunieron para hacer un divertido STORY de moda que reflejara su amistad en una secuencia divertida, dulce y creativa.
             </p>
           </div>
@@ -166,8 +162,8 @@ export default function post() {
         id="post"
         className={cx(
           "group cursor-pointer relative flex flex-col m-auto",
-          "w-[20rem] sm:w-[40rem] lg:w-[40rem] 2xl:w-[50rem] 4xl:w-[60rem]",
-          "h-[30rem] sm:h-[40rem] lg:h-[30rem] 2xl:h-[40rem] 4xl:h-[50rem]",
+          "w-[20rem] sm:w-[40rem] lg:w-[30rem] 2xl:w-[50rem] 4xl:w-[60rem]",
+          "h-[35rem] sm:h-[45rem] lg:h-[35rem] 2xl:h-[45rem] 4xl:h-[55rem]",
           "bg-white",
           "lg:hover:scale-105 transition duration-200 ease-in-out",
         )}
@@ -201,19 +197,12 @@ export default function post() {
             className={cx(
               "absolute z-20 flex bottom-0 place-content-end",
               "w-[100%] h-[10vh]",
-              "bg-transparent font-basier text-2xl text-uppercase",
+              "bg-transparent font-din text-2xl text-uppercase",
             )}
           >
-            <div className="flex-row w-[100%] h-[3rem] bg-white rounded-sm hidden lg:inline-flex">
+            <div className="flex-row w-[100%] h-[3rem] bg-white rounded-sm">
               <div className="bg-black p-[.5rem] text-bg  h-[100%] w-[100%]">
-                andrea zuckerman.
-              </div>
-            </div>
-            <div className="flex flex-row w-[100%] h-[3rem] bg-white rounded-sm lg:hidden">
-              <div className="bg-black p-[.5rem] text-bg h-[100%] w-[100%]">
-              <Marquee gradient={false} delay={3} speed={62} loop={5} pauseOnHover={true}>
-                andrea zuckerman.
-              </Marquee>
+                culture
               </div>
             </div>
           </div>
@@ -226,11 +215,11 @@ export default function post() {
             "bg-white font-basier",
           )}
         >
-          <div id="content-post-tags" className="font-bold text-primary text-sm text-uppercase">
-            activismo, feminismo, riot girl
-          </div>
           <div className="group-hover:underline">
-            <p className="text-base">
+            <h1 className="text-uppercase pb-[1rem]">
+              el feeling wear de andrea zuckerman por la cdmx.
+            </h1>
+            <p>
               Un grupo de amigas se reunieron para hacer un divertido STORY de moda que reflejara su amistad en una secuencia divertida, dulce y creativa.
             </p>
           </div>

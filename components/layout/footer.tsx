@@ -39,24 +39,37 @@ export default function footer() {
       <div
         id="contentbottom"
         className={cx(
-          "relative flex-col lg:gap-[6rem] gap-[.5rem]",
+          "relative lg:gap-[6rem] gap-[.5rem]",
           "bg-black",
         )}
       >
         <div
-          id="logo"
+          id="logo-image"
           className={cx(
-            "relative",
-            "w-[100vw] lg:h-[60vh] h-[30vh]",
+            "relative mx-auto",
+            "xl:w-[70rem] lg:w-[50rem] sm:w-[30rem] w-[20rem]",
+            "xl:h-[25rem] lg:h-[20rem] sm:h-[15rem] h-[12rem]",
+            "bg-transparent",
           )}
         >
-          <Image
-            src="/logo.svg"
-            fill
-            sizes="100vw"
-            alt="meowmag"
-          />
+          <div
+            id="content-image"
+            className={cx(
+              "relative",
+              "w-[100%] h-[100%]",
+              "",
+            )}
+          >
+            <Image
+              src="/logo.svg"
+              fill
+              sizes="100%"
+              alt="meow-logo"
+              className="object-fill"
+            />
+          </div>
         </div>
+
         <div
           id="footer"
           className={cx(

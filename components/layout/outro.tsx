@@ -43,7 +43,7 @@ export default function outro() {
             "gradient-secondary hidden lg:inline-flex",
           )}
         >
-          <Marquee gradient={false} delay={10} speed={90} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={10} speed={90} loop={40} pauseOnHover={true}>
             <div className="flex flex-row gap-[10rem] 3xl:gap-[13rem] 4xl:gap-[15rem]">
             <Link href="#" aria-label="social" className="hover:underline">
               INSTAGRAM
@@ -69,7 +69,7 @@ export default function outro() {
             "gradient-secondary lg:hidden",
           )}
         >
-          <Marquee gradient={false} delay={10} speed={62} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={10} speed={62} loop={60} pauseOnHover={true}>
             <div className="flex flex-row gap-[5rem]">
             <Link href="#" aria-label="social" className="hover:underline">
               INSTAGRAM
@@ -89,7 +89,7 @@ export default function outro() {
             "gradient-secondary-reverse lg:hidden",
           )}
         >
-          <Marquee gradient={false} delay={11} direction="right" speed={62} loop={10} pauseOnHover={true}>
+          <Marquee gradient={false} delay={11} direction="right" speed={62} loop={60} pauseOnHover={true}>
             <div className="flex flex-row gap-[5rem]">
             <Link href="#" aria-label="social media" className="hover:underline">
               FACEBOOK

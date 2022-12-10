@@ -9,17 +9,27 @@ export default function post() {
     <section
       id="main-layout-post"
       className={cx(
-        "relative flex place-content-center",
-        "w-[100vw] h-[100vh]",
+        "relative flex flex-col place-content-center",
+        "w-[100%] lg:h-[65rem] h-[50rem]",
         "bg-bg",
       )}
     >
+      <h1
+        id="meow-pick"
+        className={cx(
+          "lg:w-[50%] w-[100%] h-[5rem] pt-[2rem] mx-auto flex place-content-center",
+          "lg:animate-wiggle",
+          "font-din text-7xl text-primary/30",
+        )}
+      >
+        MEOW PICK
+      </h1>
       <div
         id="post"
         className={cx(
           "group cursor-pointer relative flex flex-col m-auto",
           "w-[20rem] sm:w-[40rem] lg:w-[60rem] 2xl:w-[70rem] 4xl:w-[80rem]",
-          "h-[30rem] sm:h-[40rem] lg:h-[40rem] 2xl:h-[50rem] 4xl:h-[60rem]",
+          "h-[35rem] sm:h-[45rem] lg:h-[45rem] 2xl:h-[55rem] 4xl:h-[65rem]",
           "bg-bg",
           "lg:hover:scale-105 transition duration-200 ease-in-out",
         )}
@@ -49,23 +59,16 @@ export default function post() {
           >
           </div>
           <div
-            id="content-image-title"
+            id="content-image-category"
             className={cx(
               "absolute z-20 flex bottom-0 place-content-end",
               "w-[100%] h-[10vh]",
-              "bg-transparent font-basier text-2xl text-uppercase",
+              "bg-transparent font-din text-2xl text-uppercase",
             )}
           >
-            <div className="flex-row w-[100%] h-[3rem] bg-bg rounded-sm hidden lg:inline-flex">
+            <div className="flex-row w-[100%] h-[3rem] bg-bg rounded-sm">
               <div className="bg-black p-[.5rem] text-bg  h-[100%] w-[100%]">
-                andrea zuckerman.
-              </div>
-            </div>
-            <div className="flex flex-row w-[100%] h-[3rem] bg-bg rounded-sm lg:hidden">
-              <div className="bg-black p-[.5rem] text-bg h-[100%] w-[100%]">
-              <Marquee gradient={false} delay={3} speed={62} loop={5} pauseOnHover={true}>
-                andrea zuckerman.
-              </Marquee>
+                story
               </div>
             </div>
           </div>
@@ -78,10 +81,10 @@ export default function post() {
             "bg-bg font-basier",
           )}
         >
-          <div id="content-post-tags" className="font-bold text-primary text-sm text-uppercase">
-            activismo, feminismo, riot girl
-          </div>
           <div className="group-hover:underline">
+            <h1 className="text-uppercase pb-[1rem]">
+              andrea zuckerman.
+            </h1>
             <p>
               Un grupo de amigas se reunieron para hacer un divertido STORY de moda que reflejara su amistad en una secuencia divertida, dulce y creativa.
             </p>
