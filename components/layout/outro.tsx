@@ -115,7 +115,7 @@ export default function outro() {
           className={cx(
             "absolute z-20 flex",
             "lg:m-[6rem] m-[1.5rem]",
-            "bg-transparent text-black font-basier sm:text-4xl text-2xl text-uppercase tracking-wider",
+            "bg-transparent text-black font-basier sm:text-4xl text-xl text-uppercase tracking-wider",
           )}
         >
           <div>

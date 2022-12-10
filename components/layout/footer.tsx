@@ -18,7 +18,7 @@ export default function footer() {
         className={cx(
           "relative flex-col lg:gap-[6rem] gap-[.5rem]",
           "w-[100%] py-[4rem]",
-          "bg-bg font-din text-6xl text-center",
+          "bg-bg font-din lg:text-7xl text-6xl text-center",
         )}
       >
         <div className="flex flex-col gap-[3rem]">
