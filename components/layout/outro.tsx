@@ -10,7 +10,7 @@ export default function outro() {
       id="main-outro"
       className={cx(
         "relative z-10 flex flex-col",
-        "w-[100vw] lg:h-[100rem] h-[125rem]",
+        "w-[100vw] lg:h-[95rem] h-[125rem]",
         "bg-white text-black",
       )}
     >
@@ -115,7 +115,7 @@ export default function outro() {
           className={cx(
             "absolute z-20 flex",
             "lg:m-[6rem] m-[1.5rem]",
-            "bg-transparent text-black font-basier sm:text-4xl text-xl text-uppercase tracking-wider",
+            "bg-transparent text-black font-basier sm:text-3xl text-xl text-uppercase tracking-wider",
           )}
         >
           <div>
