@@ -79,7 +79,7 @@ export default function footer() {
           )}
         >
           <p>
-            © MEOW MAGAZINE 2022 ~ todos los derechos reservados · legal
+            © MEOW MAGAZINE 2023 ~ todos los derechos reservados · legal
           <a
             href="https://luis.gl"
             className={cx(
