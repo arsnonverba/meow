@@ -5,6 +5,7 @@ import cx from 'classnames';
 import Intro from '../components/main/intro';
 import Categories from '../components/main/categories';
 import PostFeat from '../components/shared/post-featured';
+import PostGrid from '../components/shared/post-grid';
 import PostList from '../components/shared/post-list';
 
 const Page: NextPageWithLayout = () => {
@@ -20,7 +21,7 @@ const Page: NextPageWithLayout = () => {
       <Intro />
       <Categories />
       <PostFeat />
-      <PostList />
+      <PostGrid />
     </div>
   )
 }
